@@ -1,0 +1,24 @@
+ static boolean compareLists(SinglyLinkedListNode head1, SinglyLinkedListNode head2) {
+      int h1=1;
+      int h2=1;
+      SinglyLinkedListNode ha1=head1;
+      SinglyLinkedListNode ha2=head2;
+      while(head1.next!=null){h1++;head1=head1.next;}
+      while(head2.next!=null){h2++;head2=head2.next;}
+      System.out.println(h1+","+h2);
+      if(h1!=h2)
+         return false;
+    
+      while(ha1.next!=null){
+          //  System.out.println("head 1 = "+head1.data+", "+"head 2 = "+head2.data); 
+             if(ha1.data==ha2.data){
+                ha1 = ha1.next;
+                ha2 = ha2.next;}
+              else
+               return false;
+             }
+      if(ha1.data==ha2.data)
+         return true;
+       else
+         return false;
+    }
