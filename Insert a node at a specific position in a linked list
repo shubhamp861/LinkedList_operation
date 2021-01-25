@@ -1,0 +1,18 @@
+static SinglyLinkedListNode insertNodeAtPosition
+    (SinglyLinkedListNode head,
+     int data,
+     int position) {
+       SinglyLinkedListNode temp1=head;
+       int i=0;
+       while(i++<position-1){
+            head = head.next;
+        }   
+       SinglyLinkedListNode temp = new SinglyLinkedListNode(data);
+       temp.next = head.next;
+       head.next = temp;
+       
+       return temp1;
+       
+       
+         
+    }
