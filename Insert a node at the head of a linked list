@@ -1,0 +1,8 @@
+  static SinglyLinkedListNode insertNodeAtHead(SinglyLinkedListNode llist, int data) {
+    
+        SinglyLinkedListNode tail  = new SinglyLinkedListNode(data);
+           if(llist==null)
+              return tail;
+        tail.next=llist;
+        return tail;
+    }
