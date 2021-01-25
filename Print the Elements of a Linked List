@@ -1,0 +1,13 @@
+static void printLinkedList(SinglyLinkedListNode head) {
+     
+        SinglyLinkedListNode h = head;
+        //System.out.println(head.next);
+        while(h.next != null)
+        {
+            System.out.println(h.data);
+            h=h.next;
+            
+        }
+        System.out.println(h.data);
+
+    }
